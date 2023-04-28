@@ -1,0 +1,96 @@
+/**********************/
+/*     over 480px     */
+/**********************/
+@media only screen and (min-width: 30em) {
+}
+
+/**********************/
+/*     over 640px     */
+/**********************/
+@media only screen and (min-width: 43em) {
+  /* General Styling */
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 5rem;
+  }
+
+  /* Main */
+  main {
+    max-width: 80rem;
+  }
+
+  /* header-section */
+  .header-section img {
+    width: 10rem;
+  }
+
+  /* form-section */
+  .form-section {
+    font-size: 1.8rem;
+    margin-bottom: 8rem;
+
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .form-element {
+    padding: 2rem 3.2rem;
+  }
+
+  .email-input {
+    flex-grow: 1;
+  }
+
+  .form-message {
+    text-align: left;
+    font-size: 1.3rem;
+    margin-bottom: none;
+    position: absolute;
+    top: 7.3rem;
+    left: 7.3rem;
+  }
+
+  .email-submit {
+    padding: 2rem 6rem;
+  }
+}
+
+/**********************/
+/*     over 928px     */
+/**********************/
+@media only screen and (min-width: 58em) {
+}
+
+/***********************/
+/*     over 1120px     */
+/***********************/
+@media only screen and (min-width: 70em) {
+}
+
+/**********************/
+/* Very small screens */
+/*     under 368px    */
+/**********************/
+@media (max-width: 23em) {
+  .form-message {
+    font-size: 0.8rem;
+  }
+}
+
+/**********************/
+/* Footer media query */
+/**********************/
+@media (max-width: 23em) {
+  footer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .boxv {
+    display: none;
+  }
+}

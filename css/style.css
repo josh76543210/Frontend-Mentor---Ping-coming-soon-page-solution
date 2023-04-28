@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  /* PRIMARY */
+  --blue: hsl(223, 87%, 63%);
+  /* SECONDARY */
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --light-green: hsl(96, 51%, 45%);
+  /* NEUTRAL */
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+/* General Styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  line-height: 1;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--very-dark-blue);
+  background-color: #fff;
+  min-width: 28rem;
+}
+
+h1 {
+  color: var(--gray);
+  padding: 0;
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+h1 span {
+  color: var(--very-dark-blue);
+  font-weight: 700;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Main */
+main {
+  max-width: 50rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+
+/* header-section */
+.header-section {
+  text-align: center;
+}
+
+.header-section img {
+  width: 6rem;
+  margin-bottom: 4rem;
+}
+
+/* form-section */
+.form-section {
+  position: relative;
+  font-size: 1.3rem;
+  padding: 0 4rem;
+  margin-bottom: 6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-element {
+  padding: 1.5rem 3.2rem;
+  border-radius: 99rem;
+  outline: none;
+}
+
+.email-input {
+  border: 0.1rem solid var(--pale-blue);
+}
+
+.empty .email-input,
+.error .email-input {
+  border: 0.1rem solid var(--light-red);
+}
+
+.success .email-input {
+  border: 0.1rem solid var(--light-green);
+}
+
+.email-input::-webkit-input-placeholder {
+  /* Edge */
+  color: var(--gray);
+}
+
+.email-input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--gray);
+}
+
+.email-input::placeholder {
+  color: var(--gray);
+}
+
+.form-message {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+.empty-message,
+.error-message {
+  color: var(--light-red);
+}
+
+.empty .empty-message {
+  display: block;
+}
+
+.error .error-message {
+  display: block;
+}
+
+.success-message {
+  color: var(--light-green);
+}
+
+.success .success-message {
+  display: block;
+}
+
+.email-submit {
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  background-color: var(--blue);
+  box-shadow: 0 0.5rem 1rem 0.3rem var(--pale-blue);
+  transition: all 0.3s ease;
+}
+
+.email-submit:hover {
+  background-color: hsl(223, 87%, 73%);
+}
+
+.email-submit:active {
+  transform: scale(0.99);
+  box-shadow: none;
+}
+
+/* image-section */
+.image-section {
+  padding: 0 2rem;
+  margin-bottom: 10rem;
+}
+
+.image-section img {
+  width: 100%;
+}
+
+/* footer-section */
+.footer-section {
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--gray);
+}
+
+.icon-box {
+  margin-bottom: 2rem;
+
+  gap: 2rem;
+}
+
+.icon-box a {
+  text-decoration: none;
+}
+
+.icon-box .icon {
+  height: 3rem;
+  width: 3rem;
+  box-shadow: inset 0 0 0 0.1rem #ddd;
+  border-radius: 50%;
+  padding: 0.5rem;
+  color: var(--blue);
+  transition: all 0.2s ease;
+}
+
+.icon-box .icon:hover {
+  box-shadow: none;
+  background-color: var(--blue);
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  height: 5rem;
+  min-width: 17rem;
+  color: var(--gray);
+  background-color: transparent;
+  font-size: 1.3rem;
+  line-height: 1.3;
+
+  gap: 1rem;
+}
+
+.attribution {
+  font-size: 1.1rem;
+}
+
+.attribution a:link,
+.attribution a:visited {
+  color: var(--very-dark-blue);
+  padding: 0.1rem;
+  text-decoration: none;
+}
+
+.attribution a:hover,
+.attribution a:active {
+  border-bottom: 0.1rem solid var(--very-dark-blue);
+}
