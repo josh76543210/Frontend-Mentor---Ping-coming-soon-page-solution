@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]()
-- Live Site URL: [Add live site URL here]()
+- Solution URL: [https://www.frontendmentor.io/solutions/ping-coming-soon-page--HUbnHsUVk](https://www.frontendmentor.io/solutions/ping-coming-soon-page--HUbnHsUVk)
+- Live Site URL: [https://josh76543210-fm-ping-coming-soon-page.netlify.app/](https://josh76543210-fm-ping-coming-soon-page.netlify.app/)
 
 ## My process
 
