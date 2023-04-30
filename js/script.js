@@ -25,6 +25,7 @@ function submitForm() {
       formSectionEl.classList.remove("empty");
       formSectionEl.classList.remove("error");
       formSectionEl.classList.add("success");
+      emailInputEl.value = "";
     } else {
       // invalid
       formSectionEl.classList.remove("empty");
